@@ -26,4 +26,4 @@ update_remote:
 build_docker:
   stage: publish 
   script:
-    - curl -X POST https://registry.hub.docker.com/u/cutec/promet-client/trigger/e75e9bec-3207-4b33-82ad-99d1157902b7/
+    - curl -X POST https://registry.hub.docker.com/u/cutec/docker-alpine-php-mysql/trigger/c44b390e-d78a-49c6-8c48-384f705867f2/
