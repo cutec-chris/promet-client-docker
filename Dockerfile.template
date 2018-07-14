@@ -24,7 +24,7 @@ echo "nobody  ALL=(ALL)   NOPASSWD: ALL" >> /etc/sudoers && \
 
 # Installing packages
 apt-get install wget sqlite3 lxappearance -y && \
-apt-get install libfreetype6 libdbus-1-3 bsdiff libgtk2.0-0 libsane -y && \ 
+apt-get install libfreetype6 libdbus-1-3 bsdiff libgtk2.0-0 libsane fonts-liberation -y && \ 
 apt-get clean && apt-get autoremove -y && \
 
 usermod -a -G adm,sudo,fuse nobody && \
