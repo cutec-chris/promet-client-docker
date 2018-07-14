@@ -24,7 +24,7 @@ echo "nobody  ALL=(ALL)   NOPASSWD: ALL" >> /etc/sudoers && \
 
 # Installing packages
 apt-get install wget sqlite3 lxappearance -y && \
-apt-get install libfreetype6 libdbus-1-3 bsdiff libgtk2.0-0 libsane -y && \ 
+apt-get install libfreetype6 libdbus-1-3 bsdiff libgtk2.0-0 libsane fonts-liberation -y && \ 
 apt-get clean && apt-get autoremove -y && \
 
 usermod -a -G adm,sudo,fuse nobody && \
@@ -45,6 +45,6 @@ chown nobody:users /nobody/.config/gtk-3.0/settings.ini && \
 chown nobody:users /nobody/.gtkrc-2.0 && \
 chown nobody:users /nobody/.config/openbox/rc.xml
 
-RUN wget http://downloads.free-erp.de/promet-erp_7.0.440_amd64-gtk2.deb --level=18473 && dpkg -i promet-erp_7.0.440_amd64-gtk2.deb && rm promet-erp_7.0.440_amd64-gtk2.deb
+RUN wget http://downloads.free-erp.de/promet-erp_7.0.440_amd64-gtk2.deb --level=26691 && dpkg -i promet-erp_7.0.440_amd64-gtk2.deb && rm promet-erp_7.0.440_amd64-gtk2.deb
 EXPOSE 3389 8080
 CMD ["/sbin/my_init"]
