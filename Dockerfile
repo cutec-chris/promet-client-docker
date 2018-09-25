@@ -45,6 +45,6 @@ chown nobody:users /nobody/.config/gtk-3.0/settings.ini && \
 chown nobody:users /nobody/.gtkrc-2.0 && \
 chown nobody:users /nobody/.config/openbox/rc.xml
 
-RUN wget http://downloads.free-erp.de/promet-erp_7.0.440_amd64-gtk2.deb --level=11070 && dpkg -i promet-erp_7.0.440_amd64-gtk2.deb && rm promet-erp_7.0.440_amd64-gtk2.deb
+RUN wget http://downloads.free-erp.de/promet-erp_._amd64-gtk2.deb --level=9363 && dpkg -i promet-erp_._amd64-gtk2.deb && rm promet-erp_._amd64-gtk2.deb
 EXPOSE 3389 8080
 CMD ["/sbin/my_init"]
